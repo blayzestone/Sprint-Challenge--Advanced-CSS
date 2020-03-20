@@ -1,6 +1,11 @@
 // Navigation code here
 nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
   background-color: @nav-bg;
+  opacity: 0.5;
   .flex(column, center, center);
 
   h1 {
@@ -21,6 +26,10 @@ nav {
       text-decoration: none;
       font-size: 1.6rem;
       color: @header-font-color;
+
+      &:hover {
+        color: lighten(@header-font-color, 50%);
+      }
 
       @media @tablet {
         margin: 0 2%;

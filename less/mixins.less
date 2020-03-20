@@ -5,3 +5,19 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.custom-btn(@bg-color, @text-color, @width, @height-padding) {
+  background-color: @bg-color;
+  color: @text-color;
+  width: @width;
+  padding: @height-padding 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @text-color;
+    color: @bg-color;
+    border: solid 1px @bg-color;
+  }
+}

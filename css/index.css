@@ -290,6 +290,32 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #454A59;
+  color: #F6F6F6;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  background-color: #F6F6F6;
+  color: #454A59;
+  border: solid 1px #454A59;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

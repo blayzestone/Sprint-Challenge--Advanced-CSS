@@ -85,6 +85,17 @@
       }
 
       .btn {
+        .custom-btn(@river-bend, @wild-sand, fit-content, 5px);
+
+        @media @tablet {
+          padding: 10px 20px;
+        }
+
+        @media @phone {
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+        }
       }
     }
 

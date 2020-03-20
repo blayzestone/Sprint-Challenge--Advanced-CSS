@@ -161,10 +161,11 @@ p {
   margin: 0 auto;
 }
 nav {
+  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #F6F6F6;
 }
 nav h1 {
   font-size: 3.2rem;
@@ -173,7 +174,9 @@ nav h1 {
 nav .links {
   width: 30%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 1rem 0;
 }
 nav .links a {

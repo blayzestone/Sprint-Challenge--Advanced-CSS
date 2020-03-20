@@ -1,1 +1,43 @@
 // Navigation code here
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  background-color: @nav-bg;
+  opacity: 0.5;
+  .flex(column, center, center);
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+  .links {
+    width: 100%;
+    .flex(row, center, flex-start);
+    margin: 1rem 0;
+
+    @media @phone {
+      justify-content: space-evenly;
+    }
+
+    a {
+      margin: 0 1%;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @header-font-color;
+
+      &:hover {
+        color: lighten(@header-font-color, 50%);
+      }
+
+      @media @tablet {
+        margin: 0 2%;
+      }
+
+      @media @phone {
+        margin: 0;
+      }
+    }
+  }
+}

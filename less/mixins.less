@@ -1,1 +1,35 @@
 // Mixins Here
+.flex(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.hide-children(@child1, @child2, @child3) {
+  &:nth-child(1) {
+    display: @child1;
+  }
+  &:nth-child(2) {
+    display: @child2;
+  }
+  &:last-child {
+    display: @child3;
+  }
+}
+
+.custom-btn(@bg-color, @text-color, @width, @height-padding) {
+  background-color: @bg-color;
+  color: @text-color;
+  width: @width;
+  padding: @height-padding 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @text-color;
+    color: @bg-color;
+    border: solid 1px @bg-color;
+  }
+}

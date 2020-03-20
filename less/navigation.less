@@ -8,14 +8,28 @@ nav {
     line-height: 1.5;
   }
   .links {
-    width: 30%;
-    .flex(row, space-between, flex-start);
+    width: 60%;
+    width: 100%;
+    .flex(row, center, flex-start);
     margin: 1rem 0;
 
+    @media @phone {
+      justify-content: space-evenly;
+    }
+
     a {
+      margin: 0 1%;
       text-decoration: none;
       font-size: 1.6rem;
       color: @header-font-color;
+
+      @media @tablet {
+        margin: 0 2%;
+      }
+
+      @media @phone {
+        margin: 0;
+      }
     }
   }
 }

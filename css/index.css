@@ -172,17 +172,34 @@ nav h1 {
   line-height: 1.5;
 }
 nav .links {
-  width: 30%;
+  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin: 1rem 0;
 }
+@media (max-width: 500px) {
+  nav .links {
+    justify-content: space-evenly;
+  }
+}
 nav .links a {
+  margin: 0 1%;
   text-decoration: none;
   font-size: 1.6rem;
   color: #23293B;
+}
+@media (max-width: 800px) {
+  nav .links a {
+    margin: 0 2%;
+  }
+}
+@media (max-width: 500px) {
+  nav .links a {
+    margin: 0;
+  }
 }
 footer {
   color: #22283B;

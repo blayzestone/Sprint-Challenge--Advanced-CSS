@@ -46,7 +46,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
-  Preprocessing is additional syntax, additional ways of writing thee styles, that makes styling a website faster and easier. The syntax is converted to vanilla/traditional css by a compiler. Here is a visual example:
+  Preprocessing is additional syntax, additional ways of writing the styles, that makes styling a website faster and easier. The syntax is converted to vanilla/traditional css by a compiler. Here is a visual example:
     Syntax => Compiler => CSS
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
